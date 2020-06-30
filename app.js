@@ -12,16 +12,16 @@ const passportLocalMongoose = require("passport-local-mongoose");
 const aboutContent = "Compose Note is an app designed for note taking, organizing and task management. Compose Note helps you focus on what matters most and have access to your information when you need it. Input typed notes,  keep journals, documenting the news, events and milestones of your daily life.  Use Compose Note as a digital notepad, planner and easy-to-format word processor for all your thoughts and memos as they come. Make personal to do lists to keep your thoughts organized Set reminders to keep on top of activities and write to-do lists.Create notebooks, write notes, memos and journals on the go with the easy-to-use notepad.";
 const homeStartingContent = "Compose Note is an app designed for note taking, organizing and task management. Compose Note helps you focus on what matters most and have access to your information when you need it. Input typed notes,  keep journals, documenting the news, events and milestones of your daily life.  Use Compose Note as a digital notepad, planner and easy-to-format word processor for all your thoughts and memos as they come. Make personal to do lists to keep your thoughts organized Set reminders to keep on top of activities and write to-do lists.Create notebooks, write notes, memos and journals on the go with the easy-to-use notepad.";
 
-mongoose.connect('mongodb+srv://admin-Ashish:@cluster0-jhlkj.mongodb.net/ComposeNoteDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false
-});
-// mongoose.connect('mongodb://localhost:27017/ComposeNoteDB', {
+// mongoose.connect('mongodb+srv://admin-Ashish:@cluster0-jhlkj.mongodb.net/ComposeNoteDB', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 //   useFindAndModify: false
 // });
+mongoose.connect('mongodb://localhost:27017/ComposeNoteDB', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+});
 
 const app = express();
 
