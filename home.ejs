@@ -1,0 +1,28 @@
+<%- include("partials/header") -%>
+
+    <h1>HOME</h1>
+    <p><%= homecontent %></p>
+  <form class="" action="/DeleteNote" method="post">
+        <div class="panel-group">
+          <div class="panel panel-info">
+        <%  for(var i=0; i<postcontent.title.length; i++){ %>
+            <div class="panel-heading">
+               <h1> <%= postcontent.title[i] %></h1>
+            </div>
+
+            <div class="panel-body">
+              <p style= " display: inline-block" > <%= postcontent.post[i].substr(0,100) + "......."  %> </p>
+              <a  href= "posts/<%= postcontent.title[i] %>"  >Read More</a>
+              <button class="btn btn-primary btn-2" type="submit" name="button"  value="<%= i %>">Remove</button>
+            </div>
+
+        <%  };  %>
+      </div>
+      </div>
+   </form>
+   <form method="get" action="/compose">
+       <button id= "fixedbutton" class="button button5">+</button>
+   </form>
+
+
+<%- include("partials/footer") -%>

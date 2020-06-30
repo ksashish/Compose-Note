@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+   <div class="card">
+     <img src="/photos/profile.png" alt="John" style="width:60%">
+     <h2><%= username %></h2>
+     <p class="title"><%= email %></p>
+     <p><%= mobile %></p>
+     <a href="/" title="Home page"><i class="fa fa-dribbble"></i></a>
+     <a href="https://www.twitter.com" title="twitter"><i class="fa fa-twitter"></i></a>
+     <a href="https://www.linkedin.com" title="linkedin"><i class="fa fa-linkedin"></i></a>
+     <a href="https://www.facebook.com" title="facebook"><i class="fa fa-facebook"></i></a>
+
+    <button type="button" name="button"><a id="logout" href="/login" title="">Log out</a></button>
+
+   </div>
+</body>
